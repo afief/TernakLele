@@ -44,10 +44,39 @@ const getLuhnChecksum = function (number) {
   return (10 - (sum % 10)) % 10
 }
 
+/*
+ * Validate Credit Card Number
+ * @param {string} credit card number
+ * @return {boolean} validity
+ */
+function validate (number) {
+  number = number.replace(/[\s+|.|-]/g, '')
+
+  var checksum = 0
+  for (let i = (2 - (number.length % 2)); i <= number.length; i += 2) {
+    checksum += parseInt(number.charAt(i - 1), 10)
+  }
+
+  for (let i = (number.length % 2) + 1; i < number.length; i += 2) {
+    var digit = parseInt(number.charAt(i - 1), 10) * 2
+    if (digit < 10) {
+      checksum += digit
+    } else {
+      checksum += (digit - 9)
+    }
+  }
+  if ((checksum % 10) === 0) {
+    return true
+  } else {
+    return false
+  }
+}
+
 const generateVisa = () => generate('4')
 const generateMaster = () => generate(_.random(50, 55).toString())
 
 module.exports = {
   generateVisa,
-  generateMaster
+  generateMaster,
+  validate
 }
