@@ -4,7 +4,7 @@
   "description": "Visa and Mastercard generator and validator",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node ./examples/generator.js"
   },
   "author": "Afief Yona Ramadhana",
   "license": "GPLv3",
