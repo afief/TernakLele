@@ -14,4 +14,21 @@ const valid = {
 }
 
 console.log('Samples', JSON.stringify(samples, null, 4))
+/*
+Samples {
+    "visa": "4462378960960402",
+    "visaWithBIN": "4992848767091196",
+    "master": "5486686402889883",
+    "masterWithBIN": "5230670026151911"
+}
+*/
 console.log('Validity', JSON.stringify(valid, null, 4))
+
+/*
+Validity {
+    "visa": true,
+    "visaWithBIN": true,
+    "master": true,
+    "masterWithBIN": true
+}
+*/

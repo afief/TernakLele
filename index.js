@@ -76,6 +76,7 @@ const generateVisa = () => generate('4')
 const generateMaster = () => generate(_.random(50, 55).toString())
 
 module.exports = {
+  generate,
   generateVisa,
   generateMaster,
   validate
