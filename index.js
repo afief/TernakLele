@@ -19,7 +19,9 @@ const generate = function (bin = '4') {
 
   let checkDigit = getLuhnChecksum(result)
   result = `${result}${checkDigit}`
-  return result
+
+  // add space per four digit
+  return result.replace(/\W/gi, '').replace(/(.{4})/g, '$1 ').slice(0, -1)
 }
 
 /*
