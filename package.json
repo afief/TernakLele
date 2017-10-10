@@ -1,6 +1,6 @@
 {
   "name": "ternaklele",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Visa and Mastercard generator and validator",
   "main": "index.js",
   "scripts": {
