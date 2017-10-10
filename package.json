@@ -6,6 +6,9 @@
   "scripts": {
     "test": "node ./examples/generator.js"
   },
+  "bin": {
+    "ternaklele": "bin/ternaklele"
+  },
   "author": "Afief Yona Ramadhana",
   "license": "GPLv3",
   "dependencies": {

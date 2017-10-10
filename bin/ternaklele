@@ -1,0 +1,16 @@
+#!/usr/bin/env node
+
+const ternaklele = require('../index')
+
+const args = process.argv.splice(2)
+const type = args[0]
+
+if (['visa', 'master'].indexOf(type) >= 0) {
+  if (type === 'master') {
+    console.log(ternaklele.generateMaster())
+  } else {
+    console.log(ternaklele.generateVisa())
+  }
+} else {
+  console.log(ternaklele.generate(type))
+}
