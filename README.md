@@ -1,5 +1,5 @@
 # Ternak Lele
-#### Cradit Card Generator and Validator
+#### Credit Card Generator and Validator
 
 + Visa
 + Mastercard
