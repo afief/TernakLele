@@ -6,10 +6,11 @@ test('no valid creadit cards', () => {
     null,
     "xxxx-xxxxx-xxxxxx-xxxxx",
     "abc1234",
-    "233aa"
+    "233aa",
+    12312312
   ];
-  for (var noValidCase in noValidCases) {
-    expect(creaditCardGenerator.validate(noValidCase)).toBeFalsy();
+  for (var index in noValidCases) {
+    expect(creaditCardGenerator.validate(noValidCases[index])).toBeFalsy();
   }
 
 })
