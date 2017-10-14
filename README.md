@@ -1,4 +1,5 @@
-# Ternak Lele
+# Ternak Lele 
+[![Build Status](https://travis-ci.org/irfannurhakim/TernakLele.svg?branch=master)](https://travis-ci.org/irfannurhakim/TernakLele)
 #### Credit Card Generator and Validator
 
 + Visa
