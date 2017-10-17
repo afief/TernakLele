@@ -53,7 +53,6 @@ const getLuhnChecksum = function (number) {
  */
 function validate (number) {
   number = number.replace(/[\s+|.|-]/g, '')
-
   var checksum = 0
   for (let i = (2 - (number.length % 2)); i <= number.length; i += 2) {
     checksum += parseInt(number.charAt(i - 1), 10)
@@ -67,6 +66,7 @@ function validate (number) {
       checksum += (digit - 9)
     }
   }
+  
   if ((checksum % 10) === 0) {
     return true
   } else {
